@@ -1,0 +1,4 @@
+[1619621887369] [33mWARN[39m (14276 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-1"
+[1619621887371] [31mERROR[39m (14276 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-1"
