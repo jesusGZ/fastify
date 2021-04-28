@@ -2,3 +2,31 @@
     reqId: "req-1"
 [1619621887371] [31mERROR[39m (14276 on BBLOCK.local): [36mSoy un log error[39m
     reqId: "req-1"
+[1619623505222] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-1"
+[1619623505223] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-1"
+[1619623507659] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-2"
+[1619623507659] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-2"
+[1619623509202] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-3"
+[1619623509202] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-3"
+[1619623509793] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-4"
+[1619623509793] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-4"
+[1619623510031] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-5"
+[1619623510031] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-5"
+[1619623510364] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-6"
+[1619623510364] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-6"
+[1619623512035] [33mWARN[39m (18524 on BBLOCK.local): [36mSoy un log warn[39m
+    reqId: "req-7"
+[1619623512035] [31mERROR[39m (18524 on BBLOCK.local): [36mSoy un log error[39m
+    reqId: "req-7"

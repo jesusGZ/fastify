@@ -1,4 +1,10 @@
 const fastify = require("fastify");
+/* fatal
+error
+warn
+info (este es el default)
+debug
+trace */
 const server = fastify({
   logger: {
     level: "warn",
