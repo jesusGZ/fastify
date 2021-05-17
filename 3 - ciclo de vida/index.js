@@ -1,10 +1,5 @@
 const fastify = require("fastify");
-const server = fastify({
-    logger: {
-        level: "info",
-        prettyPrint: true,
-    },
-});
+const server = fastify({logger: {level: "info",prettyPrint: true}});
 
 server.addHook("onRequest", function (request, reply, done) {
     request.log.info("Se ejecuta onRequest a nivel aplicación");

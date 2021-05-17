@@ -14,7 +14,6 @@ const server = fastify({
 });
 
 server.get("/", function (request, reply) {
-    //  Se envia un log utilizando request con su propiedad log seguido del nivel de log que se quiere enviar
     request.log.warn("Soy un log warn");
     request.log.error("Soy un log error");
     reply.send({

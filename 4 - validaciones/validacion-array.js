@@ -2,27 +2,9 @@ const fastify = require("fastify");
 
 const server = fastify({
     logger: {
-        level: "warn",
-        prettyPrint: true,
-    },
-});
-
-/*
-    El siguiente esquema utiliza un ejemplo de Array de objetos, un cuerpo JSON que pasaría la validación sería
-    {
-        name: "Node Cookbook",
-        authors: [
-            {
-                name: "David",
-                surname: "Clements"
-            },
-            {
-                name: "Mathias",
-                surname: "Buus"
-            }
-        ]
+        level: "warn",prettyPrint: true
     }
-*/
+});
 
 server.post("/book", {
     schema: {
@@ -33,7 +15,6 @@ server.post("/book", {
                 name: { type: "string" },
                 authors: {
                     type: "array",
-                    // minItems especifica que se requiere al menos un elemento
                     minItems: 1,
                     items: {
                         type: "object",
@@ -49,10 +30,8 @@ server.post("/book", {
     },
     handler: function (request, reply) {
         const { name, authors } = request.body;
-
         reply.send({
-            name: `El libro se llama ${name}`,
-            authors,
+            name: `El libro se llama ${name}`, authors
         });
     },
 });

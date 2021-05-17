@@ -1,11 +1,6 @@
 const fastify = require("fastify");
 
-const server = fastify({
-    logger: {
-        level: "warn",
-        prettyPrint: true,
-    },
-});
+const server = fastify({logger: {level: "warn",prettyPrint: true}});
 
 server.post("/book", {
     schema: {

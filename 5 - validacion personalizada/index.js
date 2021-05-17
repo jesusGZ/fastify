@@ -1,11 +1,6 @@
 const fastify = require("fastify");
 
-const server = fastify({
-  logger: {
-    level: "warn",
-    prettyPrint: true,
-  },
-});
+const server = fastify({ logger: {level: "warn", prettyPrint: true,},});
 
 server.post("/book", {
   schema: {
@@ -19,9 +14,9 @@ server.post("/book", {
       },
     },
   },
+  
   preHandler: (request, reply, done) => {
     const { release } = request.body;
-
     const releaseDate = new Date(release);
 
     /*
@@ -31,17 +26,14 @@ server.post("/book", {
      */
 
     if (isNaN(releaseDate) || releaseDate === "Invalid Date") {
-      reply.code(400).send({
-        error: "La fecha no es valida",
-      });
+      reply.code(400).send({error: "La fecha no es valida"});
     } else if (releaseDate > new Date()) {
-      reply.code(400).send({
-        error: "La fecha es posterior a la fecha actual",
-      });
+      reply.code(400).send({error: "La fecha es posterior a la fecha actual"});
     } else {
       done();
     }
   },
+
   handler: (request, reply) => {
     const { name, author, release } = request.body;
     reply.send({
